@@ -16,10 +16,6 @@ if __name__ == "__main__":
                 score = float(open("temp/auc.txt", "r").readline()[:-1])
                 arr.append((score, a / 10, b / 10, c / 10))
 
-                break
-            break
-        break
-
-    arr.sort()
+    arr.sort(reverse=True)
 
     json.dump(arr, open("temp/%s.txt" % dataset, "w"), indent=2, ensure_ascii=False, sort_keys=True)
