@@ -27,3 +27,4 @@ for i, j in edges:
         b += 1
 
 print("Auc value:", float(a) / b)
+print(float(a) / b, file=open("temp/auc.txt", "w"))
